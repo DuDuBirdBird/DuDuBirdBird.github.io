@@ -1,1 +1,254 @@
-<h1>欢迎来到主页<h1>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>知享 - 简单的知识分享平台</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        nav {
+            background-color: white;
+            padding: 1rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: #2c3e50;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: #3498db;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            display: flex;
+            gap: 2rem;
+        }
+        
+        main {
+            flex: 3;
+        }
+        
+        aside {
+            flex: 1;
+        }
+        
+        .article-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            margin-bottom: 2rem;
+        }
+        
+        .article-card h2 {
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+        
+        .article-meta {
+            color: #7f8c8d;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+        
+        .article-card p {
+            margin-bottom: 1rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        
+        .btn:hover {
+            background-color: #2980b9;
+        }
+        
+        .sidebar-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            margin-bottom: 2rem;
+        }
+        
+        .sidebar-card h3 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #f5f7fa;
+        }
+        
+        .tag-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .tag {
+            padding: 0.3rem 0.8rem;
+            background-color: #e3f2fd;
+            color: #3498db;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            text-decoration: none;
+        }
+        
+        .sidebar-card ul {
+            list-style: none;
+        }
+        
+        .sidebar-card li {
+            margin-bottom: 0.8rem;
+            padding-bottom: 0.8rem;
+            border-bottom: 1px solid #f5f7fa;
+        }
+        
+        .sidebar-card a {
+            text-decoration: none;
+            color: #3498db;
+            transition: color 0.3s;
+        }
+        
+        .sidebar-card a:hover {
+            color: #2980b9;
+        }
+        
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>知享</h1>
+        <p>分享知识，连接你我</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">首页</a></li>
+            <li><a href="#">前端开发</a></li>
+            <li><a href="#">后端开发</a></li>
+            <li><a href="#">人工智能</a></li>
+            <li><a href="#">关于我们</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <main>
+            <article class="article-card">
+                <h2>HTML基础入门：构建网页的基石</h2>
+                <div class="article-meta">作者：小明 | 发布时间：2025-12-02 | 分类：前端开发</div>
+                <p>HTML（超文本标记语言）是构建网页的基础，它使用标签来定义网页的结构和内容。本文将带你了解HTML的基本语法、常用标签以及如何创建第一个网页...</p>
+                <a href="#" class="btn">阅读更多</a>
+            </article>
+
+            <article class="article-card">
+                <h2>CSS Flex布局：灵活的页面布局方案</h2>
+                <div class="article-meta">作者：小红 | 发布时间：2025-12-01 | 分类：前端开发</div>
+                <p>Flex布局是CSS3引入的强大布局方式，能够轻松实现各种复杂的页面布局。本文将详细介绍Flex容器和项目的属性，以及实际应用案例...</p>
+                <a href="#" class="btn">阅读更多</a>
+            </article>
+
+            <article class="article-card">
+                <h2>JavaScript异步编程：Promise与async/await</h2>
+                <div class="article-meta">作者：小李 | 发布时间：2025-11-30 | 分类：前端开发</div>
+                <p>异步编程是JavaScript的核心特性之一，Promise和async/await让异步代码更加简洁易读。本文将从回调地狱讲起，逐步介绍Promise的使用和async/await的语法糖...</p>
+                <a href="#" class="btn">阅读更多</a>
+            </article>
+        </main>
+
+        <aside>
+            <div class="sidebar-card">
+                <h3>热门标签</h3>
+                <div class="tag-list">
+                    <a href="#" class="tag">HTML</a>
+                    <a href="#" class="tag">CSS</a>
+                    <a href="#" class="tag">JavaScript</a>
+                    <a href="#" class="tag">React</a>
+                    <a href="#" class="tag">Vue</a>
+                    <a href="#" class="tag">Node.js</a>
+                    <a href="#" class="tag">Python</a>
+                    <a href="#" class="tag">人工智能</a>
+                </div>
+            </div>
+
+            <div class="sidebar-card">
+                <h3>最新文章</h3>
+                <ul>
+                    <li><a href="#">Python数据分析入门：Pandas基础</a></li>
+                    <li><a href="#">React Hooks完全指南</a></li>
+                    <li><a href="#">Docker容器化部署实战</a></li>
+                    <li><a href="#">MySQL性能优化技巧</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-card">
+                <h3>关于平台</h3>
+                <p>知享是一个专注于技术知识分享的平台，致力于帮助开发者成长，分享有价值的技术内容。</p>
+            </div>
+        </aside>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 知享 - 简单的知识分享平台 版权所有</p>
+    </footer>
+</body>
+</html>
